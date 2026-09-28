@@ -1,0 +1,9 @@
+{
+  "name": "node-react-ec2-sample",
+  "version": "1.0.0",
+  "scripts": {
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build-client": "cd client && npm run build"
+  }
+}
+
