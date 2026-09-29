@@ -41,7 +41,7 @@ resource "aws_security_group" "web_sg" {
 
 # 2. Provision EC2 & Automate Code Setup via User Data
 resource "aws_instance" "web_server" {
-  ami           = aws_ami.ubuntu.id
+  ami           = data.aws_ami.ubuntu.id
   instance_type = var.instance_type
   #key_name      = var.key_name
 
